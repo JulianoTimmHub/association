@@ -3,7 +3,7 @@ class PaymentsController < ApplicationController
 
   # GET /payments or /payments.json
   def index
-    @payments = Payment.limit(30)
+    @payments = Payment.paginate(page: params[:page], per_page: 30)
   end
 
   # GET /payments/1 or /payments/1.json

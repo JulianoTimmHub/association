@@ -12,6 +12,8 @@
   Novo pagamento
 <% end %>
 
+<%= will_paginate @payments %>
+
 <div id="payments">
 <div class="table-responsive">
   <table class="table table-striped">
@@ -41,3 +43,5 @@
     </tbody>
   </table>
 </div>
+
+<%= will_paginate @payments %>
